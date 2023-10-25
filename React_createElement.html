@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Using CDN</title>
+    <script crossorigin src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+     const maindiv=document.getElementById("root");
+     const root=ReactDOM.createRoot(maindiv);
+//   --------------   creating react mannually or using creatElement 
+     const head=React.createElement("h1",{},"Hello WOrlds")
+     const p1=React.createElement("p",{},"A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications. ")
+     const p2=React.createElement("p",{},"A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications.A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications. A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications. A content delivery network (CDN) is a network of interconnected servers that speeds up ")
+     const p3=React.createElement("p",{},"A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications.A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications.A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications.A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications. ")
+     const heading=React.createElement("div",{},head,p1,p2,p3)
+     //const heading=React.createElement("div",{},"Hello WOrlds",React.createElement("h1",{},"Hello WOrlds"),React.createElement("h2",{},"Head 2"))
+     root.render(heading);
+
+    // function name(){return "Kalpesh"}
+    // root.render(
+        
+    //     <div>
+            
+    //         <h1>Hello</h1>
+    //         <h2>head 2</h2>
+    //        <h3>{name()}</h3>
+    //         </div>
+        
+    //     )
+//----------------------------- When we uses above method to create react pro it will littel bit messy hence we uses comonents
+
+// const names=["kalp","abcd","xyz","lk"];
+// function Hello(){
+//     return <div>
+//         <h1>Hello WOrld</h1>
+//        <h2>{names.map(el=>{
+//         return el+" ";
+//        })}</h2>
+//         </div>
+// }
+
+// root.render(
+//     <div>
+//         <Hello/>
+      
+//        </div>
+    
+// )
+
+    </script>
+
+</body>
+</html>

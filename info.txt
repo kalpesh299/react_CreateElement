@@ -1,0 +1,2 @@
+we can dierectly create a react project with the help of cdn links without installing react CRA bbut the problem is it makes code messy and 
+and difficult to manage and hadle hence we need to use CRA after that we can create seperate components with  .jsx extention 
